@@ -8,10 +8,9 @@ def verificar(numero):
     else:
         return "ÍMPAR"
 
-#int é uma função built-in que serve para deixar o numero em inteiro
 jogador = int(input("Escolha um número:"))
 
-#randining serve para nao deixar o numero vir enteiro 
+
 oponente = random.randint(1,10)
 
 soma = jogador + oponente
@@ -25,4 +24,5 @@ resultado = verificar(soma)
 print("Resultado:", resultado)
 
 print("Maior número jogado:", max(jogador, oponente))
+
 print("Valor final:", abs(soma))
